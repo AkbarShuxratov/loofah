@@ -1,0 +1,127 @@
+/* Local styles for Thank You page */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .sticky-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+  }
+
+  .sticky-nav a:hover,
+  .sticky-nav a.active {
+    color: #007BFF;
+  }
+
+  .thankyou-section {
+    max-width: 600px;
+    margin: 80px auto 2rem; /* Offset for sticky nav */
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .thankyou-section h1 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .thankyou-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .thankyou-section .cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .thankyou-section .cta-button:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+    user-select: none;
+  }
+
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .sticky-nav a {
+      margin: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .thankyou-section {
+      margin-top: 60px;
+    }
+
+    .thankyou-section h1 {
+      font-size: 1.5rem;
+    }
+
+    .thankyou-section p {
+      font-size: 1rem;
+    }
+  }
+  .Switch {
+    color: #39eaa9;
+    border-radius: 10px;
+    position: sticky;
+    background: linear-gradient(to right, #609ee4, #44d9d2);
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    margin: 15px auto 20px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .saleshead, .homeshead {
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-color: #f8fbfa;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in;
+    color: #2a623d;
+  }
+  
+  .homeshead:hover, .saleshead:hover {
+    background: linear-gradient(to right, #609ee4, #44d9d2);
+  
+  }
+  
+  .tagline {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+    user-select: none;
+  }

@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+.Switch {
+    color: #39eaa9;
+    border-radius: 10px;
+    position: sticky;
+    background: linear-gradient(to right, #609ee4, #44d9d2);
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    margin: 15px auto 20px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .saleshead, .homeshead {
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-color: #f8fbfa;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in;
+    color: #2a623d;
+  }
+  
+  .homeshead:hover, .saleshead:hover {
+    background: linear-gradient(to right, #609ee4, #44d9d2);
+  
+  }
+  
+  .tagline {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  
+.our-group-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.our-group-section h1 {
+    font-size: 2.8rem;
+    color: #1a3c34;
+    margin-bottom: 20px;
+}
+
+.intro {
+    background: #e8f0ef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #4a5c58;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #1a3c34;
+    margin-bottom: 8px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #2a80b9;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .our-group-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .our-group-section {
+        padding: 30px 15px;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+    user-select: none;
+  }

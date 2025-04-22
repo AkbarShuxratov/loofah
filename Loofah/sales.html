@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sponge vs Loofah Sales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style2.css" />
+  <link rel="icon" href="./icon.png" type="image/png">
+</head>
+<header>
+  <section class="Switch">
+    <a class="homeshead"href="./index.html">Home</a>
+    <a class="saleshead" href="./sales.html">Sales</a>
+    <a class="saleshead" href="./group.html">Our Group</a>
+    <a class="saleshead" href="./contact.html">Contact</a>
+
+  </section>
+</header>
+<body class="bg-gradient-to-br from-gray-100 via-blue-50 to-emerald-50 min-h-screen p-6">
+  <div class="dashboard max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6">
+    <div class="sidebar bg-white rounded-xl shadow-lg p-6">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Filters</h2>
+      <div class="filters flex flex-col gap-4">
+        <input type="text" id="searchInput" placeholder="Search by product..." class="filter-input p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 bg-white text-gray-700">
+        <select id="categoryFilter" class="filter-input p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 bg-white text-gray-700">
+          <option value="">All Categories</option>
+          <option value="Cleaning">Cleaning</option>
+        </select>
+        <input type="number" id="minPrice" placeholder="Min Price" class="filter-input p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 bg-white text-gray-700">
+        <input type="number" id="maxPrice" placeholder="Max Price" class="filter-input p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 bg-white text-gray-700">
+      </div>
+    </div>
+
+    <div class="main-content flex flex-col gap-6">
+      <div class="chart-container bg-white rounded-xl shadow-lg p-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Sales Comparison in 2024 Worldwide</h2>
+        <canvas id="salesChart"></canvas>
+      </div>
+      <div class="table-container bg-white rounded-xl shadow-lg p-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Sales Data in 2024</h2>
+        <table id="salesTable" class="w-full">
+          <thead>
+            <tr class="bg-gradient-to-r from-blue-500 to-emerald-500 text-white">
+              <th data-sort="product" class="p-4 text-left cursor-pointer rounded-tl-lg">Product <span class="sort-arrow">↕</span></th>
+              <th data-sort="category" class="p-4 text-left cursor-pointer">Category <span class="sort-arrow">↕</span></th>
+              <th data-sort="price" class="p-4 text-left cursor-pointer">Price <span class="sort-arrow">↕</span></th>
+              <th data-sort="quantity" class="p-4 text-left cursor-pointer">Quantity <span class="sort-arrow">↕</span></th>
+              <th data-sort="total" class="p-4 text-left cursor-pointer rounded-tr-lg">Total <span class="sort-arrow">↕</span></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script2.js"></script>
+  <footer class="LL">
+    <p>© 2025 Loofah Lovers • Clean the planet, one scrub at a time 🧼</p>
+  </footer>
+</body>
+</html>
